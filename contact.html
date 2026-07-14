@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Ronn Isen Y. Baetiong, an aspiring Cybersecurity Specialist." />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">CyberPortfolio</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+
+    <div class="container">
+
+      <h1 class="page-title">Contact Me</h1>
+
+      <div class="contact-layout">
+
+        <section class="content-box">
+
+          <h2>Get in Touch</h2>
+
+          <p>
+            Feel free to reach out if you'd like to connect, collaborate, or discuss
+            cybersecurity, technology, or future opportunities.
+          </p>
+
+          <br>
+
+          <p><strong>Email:</strong> ronnisenbaetiong@gmail.com</p>
+
+          <p><strong>Facebook:</strong> Isen Ronn</p>
+
+          <p><strong>GitHub:</strong> tsujo2</p>
+
+        </section>
+
+        <section class="content-box">
+
+          <h2>Send a Message</h2>
+
+          <form id="contactForm" novalidate>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+              />
+              <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+              />
+              <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+              ></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+
+            <p class="success" id="formSuccess"></p>
+
+          </form>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Ronn Isen Y. Baetiong. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
